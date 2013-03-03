@@ -10,6 +10,7 @@
       <th><%= model_class.human_attribute_name(:date) %></th>
       <th><%= model_class.human_attribute_name(:location) %></th>
       <th><%= model_class.human_attribute_name(:image) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -22,6 +23,7 @@
         <td><%= event.date %></td>
         <td><%= event.location %></td>
         <td><%= event.image %></td>
+        <td><%= event.description %></td>
         <td><%=l event.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
