@@ -31,6 +31,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'omniauth'
 
+gem 'heroku'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
