@@ -1,12 +1,13 @@
-class User < ActiveRecord::Base
-
+  class User < ActiveRecord::Base
+ 
 	has_many :authentications	
-  attr_accessible :email, :password_hash, :password_salt, :password_confirmation
+  attr_accessible :email, :password_hash, :password_salt, :password_confirmation, :password
   
-  attr_accessor :password
+  attr_accessor :password, :password_confirmation
   before_save :encrypt_password
   
-  validates :password, :presence => true, :confirmation => true 
+  validates :password, :presence => true
+  validates :password_confirmation, :presence => true 
   validates :email, :presence => true, :uniqueness => true
 
   def self.authenticate(email, password)
