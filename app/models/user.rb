@@ -1,11 +1,12 @@
   class User < ActiveRecord::Base
  
 	has_many :authentications	
-  attr_accessible :email, :password_hash, :password_salt, :password_confirmation, :password
+  attr_accessible :name, :email, :password_hash, :password_salt, :password_confirmation, :password
   
   attr_accessor :password, :password_confirmation
   before_save :encrypt_password
   
+  validates :name, :presence => true
   validates :password, :presence => true
   validates :password_confirmation, :presence => true 
   validates :email, :presence => true, :uniqueness => true
