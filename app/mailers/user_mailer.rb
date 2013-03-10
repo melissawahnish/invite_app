@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
  
   def welcome_email(user)
     @user = user
-    @url  = "inviteapp.heroku.com"
+    @url  = "invitationapp.heroku.com"
     email_with_name = "#{@user.name} <#{@user.email}>"
     mail(:to => email_with_name, :subject => "Welcome to Aarting Invitations!")
   end
