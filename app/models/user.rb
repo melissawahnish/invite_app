@@ -1,6 +1,7 @@
   class User < ActiveRecord::Base
  
 	has_many :authentications	
+  has_many :events
   attr_accessible :name, :email, :password_hash, :password_salt, :password_confirmation, :password
   
   attr_accessor :password, :password_confirmation

@@ -3,4 +3,6 @@ class Event < ActiveRecord::Base
 
   validates :title, :presence => true
   validates :location, :presence => true
+
+  belongs_to :user
 end
