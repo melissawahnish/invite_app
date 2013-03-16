@@ -43,6 +43,7 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
+    params[:event][:date] = params[:event][:date].to_datetime
     @event = current_user.events.new(params[:event])
 
     respond_to do |format|
