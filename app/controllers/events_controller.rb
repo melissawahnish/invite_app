@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+    before_filter :require_login
+ 
   # GET /events
   # GET /events.json
   def index
@@ -84,5 +86,23 @@ class EventsController < ApplicationController
       format.html { redirect_to events_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+ 
+  def require_login
+    unless logged_in?
+      flash[:error] = "You must be logged in to make an event."
+      redirect_to(:controller => "sessions", :action => "new") # halts request cycle
+    end
+  end
+ 
+  # The logged_in? method simply returns true if the user is logged
+  # in and false otherwise. It does this by "booleanizing" the
+  # current_user method we created previously using a double ! operator.
+  # Note that this is not common in Ruby and is discouraged unless you
+  # really mean to convert something into true or false.
+  def logged_in?
+    !!current_user
   end
 end
