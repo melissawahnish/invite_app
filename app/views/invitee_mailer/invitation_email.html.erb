@@ -6,13 +6,13 @@
   <body>
     <h1>You have been invited to a special event!</h1>
     <p>
-      <%= @event.title %> will take place on <%= @event.date %> at <%= @event.location %>.<br/>
+      <strong><%= @event.title %></strong> will take place on <%= @event.date %> at <%= @event.location %>.<br/>
     </p>
     <p>
       Here is more info about the event:
     </p>
     <p>
-      <italic><%= @event.description %></italic>
+      <i><%= @event.description %></i>
     </p>  
     <p>We hope you enjoy the event!</p>
     <p> ~The aarting team </p>
