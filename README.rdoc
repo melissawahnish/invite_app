@@ -11,9 +11,7 @@ Home page
 
 
 Continuing work:
-After much labor and much help, I have a DateTimePicker for which the jquery works nicely.  However, I've not yet been able to tie it into my database so currently you can save an Event, but it won't actually save the date.  
-
-Images:
+After much labor and much help, I have a DateTimePicker for which the jquery works nicely.  However, I've not yet been able to tie it into my database so currently you can save an Event, but it won't actually save the date.  Also, I plan to incorporate Carrier Wave this week.
 
 Future plans:
 The next model to build is an Attendee model which will hold RSVPs. I would like to create a reminder mailer to those who have RSVP'd.  Maybe one day, I'll add in integration with Facebook Events.
