@@ -6,4 +6,5 @@ class Event < ActiveRecord::Base
   validates :duration, :numericality => true, :numericality => { :greater_than_or_equal_to => 0.5 }, :numericality => { :less_than_or_equal_to => 24 }
 
   belongs_to :user
+  mount_uploader :image, ImageUploader
 end
