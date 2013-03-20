@@ -8,12 +8,13 @@ Mailers: Welcome Email and Invitation Email
 Event scaffold with validations
 User model with validations
 Home page
+ImageUploader with CarrierWave
 
 
 Continuing work:
-After much labor and much help, I have a DateTimePicker for which the jquery works nicely.  However, I've not yet been able to tie it into my database so currently you can save an Event, but it won't actually save the date.  Also, I plan to incorporate Carrier Wave this week.
+After much labor and much help, I have a DateTimePicker for which the jquery works nicely.  However, I've not yet been able to tie it into my database so currently you can save an Event, but it won't actually save the date.  
 
 Future plans:
-The next model to build is an Attendee model which will hold RSVPs. I would like to create a reminder mailer to those who have RSVP'd.  Maybe one day, I'll add in integration with Facebook Events.
+The next model to build is an Attendee model which will hold RSVPs. I would like to create a reminder mailer to those who have RSVP'd.  Maybe one day, I'll add integration with Facebook Events.
 
 Thanks to Matthew Jording, Steven Nunez, and Matt Newton for their excellent guidance and encouragment!
