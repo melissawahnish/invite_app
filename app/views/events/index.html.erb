@@ -5,12 +5,14 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:id) %></th> 
+      <th><%= model_class.human_attribute_name(:image) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:date) %></th>
-      <th><%= model_class.human_attribute_name(:duration) %></th>
+      <th><%= model_class.human_attribute_name(:start_time) %></th>
+      <th><%= model_class.human_attribute_name(:end_time) %></th>
+      <!-- <th><%= model_class.human_attribute_name(:duration) %></th> -->
       <th><%= model_class.human_attribute_name(:location) %></th>
-      <th><%= model_class.human_attribute_name(:image) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -20,11 +22,13 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= link_to event.id, event_path(event) %></td>
+        <td><%= image_tag event.image_url(:small_thumb, @event).to_s %></td>
         <td><%= event.title %></td>
         <td><%= event.date %></td>
-        <td><%= event.duration %></td>
+        <td><%= event.start_time %></td>
+        <td><%= event.end_time %></td>
+        <!-- <td><%= event.duration %></td> -->
         <td><%= event.location %></td>
-        <td><%= event.image %></td>
         <td><%= event.description %></td>
         <td><%=l event.created_at %></td>
         <td>

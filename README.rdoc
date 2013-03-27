@@ -9,10 +9,11 @@ Event scaffold with validations
 User model with validations
 Home page
 ImageUploader with CarrierWave
+Jquery date and time pickers
 
 
 Continuing work:
-After much labor and much help, I have a DateTimePicker for which the jquery works nicely.  However, I've not yet been able to tie it into my database so currently you can save an Event, but it won't actually save the date.  
+I'm working on making the date and time show in more friendly formats. Also, I need to better incorporate the FB login.  
 
 Future plans:
 The next model to build is an Attendee model which will hold RSVPs. I would like to create a reminder mailer to those who have RSVP'd.  Maybe one day, I'll add integration with Facebook Events.
