@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  attr_accessible :date, :image, :location, :title, :invitees, :description, :duration
+  attr_accessible :date, :image, :location, :title, :invitees, :description, :duration, :start_time, :end_time
 
   validates :title, :presence => true
   validates :location, :presence => true
