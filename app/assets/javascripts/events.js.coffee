@@ -1,3 +1,3 @@
 jQuery ->
-  $('#events_date').datepicker
+  $('#event_date').datepicker
     dateFormat: 'yy-mm-dd'
