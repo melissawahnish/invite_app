@@ -2,25 +2,25 @@
   <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :title, :class => 'text_field' %>
+      <%= f.text_field :title, :class => 'text_field', :placeholder => "Enter the event title." %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label "Date", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :date %>
+      <%= f.text_field :date, :placeholder => "Select a date." %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label "Start Time", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :start_time, :class => "ui-timepicker-input" %>
+      <%= f.text_field :start_time, :class => "ui-timepicker-input", :placeholder => "Select a start time."%>
     </div>
   </div>
   <div class="control-group">
     <%= f.label "End Time", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :end_time, :class => "ui-timepicker-input" %>
+      <%= f.text_field :end_time, :class => "ui-timepicker-input", :placeholder => "Select an end time." %>
     </div>
   </div>
 <!--   <div class="control-group">
@@ -32,7 +32,7 @@
   <div class="control-group">
     <%= f.label :location, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :location, :class => 'text_field' %>
+      <%= f.text_field :location, :class => 'text_field', :placeholder => "Enter the address." %>
     </div>
   </div>
   <div class="control-group">
@@ -44,13 +44,13 @@
   <div class="control-group">
     <%= f.label :description, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :description, :class => 'text_area' %>
+      <%= f.text_area :description, :class => 'text_area', :placeholder => "Enter a fun description." %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :invitees, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :invitees, :class => 'text_area' %>
+      <%= f.text_area :invitees, :class => 'text_area', :placeholder => "Enter email addresses separated by commas." %>
     </div>
   </div>
 
