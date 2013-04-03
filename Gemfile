@@ -33,8 +33,6 @@ gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
-
-
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 
@@ -44,6 +42,18 @@ gem 'heroku'
 
 gem "carrierwave"
 gem "mini_magick"
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
+end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
