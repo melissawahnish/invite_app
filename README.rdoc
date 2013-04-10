@@ -1,15 +1,7 @@
-Welcome to Melissa's final project for ITR Winter 2013!
+Welcome to Melissa's Event Invitation prototype!
 
-Accomplishments: 
-User authentication from scratch
-Integration of Omniauth gem
-Integration of Bootstrap gem
-Mailers: Welcome Email and Invitation Email
-Event scaffold with validations
-User model with validations
-Home page
-ImageUploader with CarrierWave
-Jquery date and time pickers
+Accomplishments: User authentication from scratch, Integration of Omniauth gem, Integration of Bootstrap gem, Mailers: Welcome Email and Invitation Email, Event scaffold with validations,
+User model with validations, Home page, ImageUploader with CarrierWave, Jquery date and time pickers
 
 
 Continuing work:
@@ -18,4 +10,4 @@ I'm working on making the date and time show in more friendly formats. Also, I n
 Future plans:
 The next model to build is an Attendee model which will hold RSVPs. I would like to create a reminder mailer to those who have RSVP'd.  Maybe one day, I'll add integration with Facebook Events.
 
-Thanks to Matthew Jording, Steven Nunez, and Matt Newton for their excellent guidance and encouragment!
+Thanks to Matthew Jording, Steven Nunez, and Matt Newton at GA for their excellent guidance and encouragment!
