@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327172730) do
+ActiveRecord::Schema.define(:version => 20130425001000) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(:version => 20130327172730) do
     t.decimal  "duration"
     t.time     "start_time"
     t.time     "end_time"
+  end
+
+  create_table "invitees", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "RSVP"
+    t.integer  "event_id"
+    t.boolean  "is_deleted"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
